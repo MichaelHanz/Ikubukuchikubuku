@@ -1,8 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
     background-color: #f9e3e3;
     font-family: 'Arial', sans-serif;
@@ -17,8 +22,32 @@ body {
     color: #d32f2f;
 }
 
+.gif{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items:normal;
+}
+
+@media only screen and (max-width: 700px) {
+    .gif_container {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .gif_container {
+      width: 100%;
+    }
+  }
 .gif_container img {
-    width: 100%; 
-    max-width: 500px; 
-    height: auto; 
+
+    float: left;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    height: auto;
+    border: solid 1px black;
+
 }
